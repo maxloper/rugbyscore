@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.neilbond.rugbyscore.MainActivity">
+
+    <Button
+        android:id="@+id/plusThreeTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:text="+3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="plus3A"/>
+
+    <Button
+        android:id="@+id/plusFiveTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="+5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plusThreeTeamA"
+        android:onClick="plus5A"/>
+
+    <Button
+        android:id="@+id/plusTwoTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="+2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plusFiveTeamA"
+        android:onClick="plus2A"/>
+
+    <TextView
+        android:id="@+id/teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="TEAM A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamASore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/teamA"
+        app:layout_constraintTop_toBottomOf="@+id/teamA" />
+
+    <TextView
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="7dp"
+        android:text="TEAM B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamBScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/teamB"
+        app:layout_constraintTop_toBottomOf="@+id/teamB" />
+
+    <Button
+        android:id="@+id/plusThreeTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="68dp"
+        android:text="+3"
+        app:layout_constraintBottom_toTopOf="@+id/plusTwoTeamA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamBScore"
+        android:onClick="plus3B"/>
+
+    <Button
+        android:id="@+id/plusFiveTeamb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="+5"
+        app:layout_constraintStart_toStartOf="@+id/plusThreeTeamB"
+        app:layout_constraintTop_toBottomOf="@+id/plusThreeTeamB"
+        android:onClick="plus5B"/>
+
+    <Button
+        android:id="@+id/plusTwoTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="+2"
+        app:layout_constraintStart_toStartOf="@+id/plusFiveTeamb"
+        app:layout_constraintTop_toBottomOf="@+id/plusFiveTeamb"
+        android:onClick="plus2B"/>
+
+    <Button
+        android:id="@+id/resets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="466dp"
+        android:text="Resets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="resetss"/>
+
+</android.support.constraint.ConstraintLayout>
